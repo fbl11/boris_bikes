@@ -19,6 +19,10 @@ class DockingStation
 		@bikes.pop
 	end
 
+	def report(bike)
+		bike.working?
+	end
+
 	private
 	def full?
 		@bikes.length >= @capacity
